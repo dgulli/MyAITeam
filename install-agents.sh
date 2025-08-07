@@ -31,7 +31,7 @@ echo "========================================"
 echo ""
 
 # Check if running from the correct directory
-if [ ! -f "gcp-cloud-architect.md" ] || [ ! -f "gcp-terraform-engineer.md" ] || [ ! -f "adk-python-engineer.md" ] || [ ! -f "gcp-python-sdk-engineer.md" ] || [ ! -f "gcp-nodejs-sdk-engineer.md" ]; then
+if [ ! -f "gcp-cloud-architect.md" ] || [ ! -f "gcp-terraform-engineer.md" ] || [ ! -f "adk-python-engineer.md" ] || [ ! -f "gcp-python-sdk-engineer.md" ] || [ ! -f "gcp-nodejs-sdk-engineer.md" ] || [ ! -f "gcp-jenny.md" ] || [ ! -f "gcp-karen.md" ] || [ ! -f "gcp-task-validator.md" ] || [ ! -f "gcp-code-quality.md" ]; then
     print_error "Error: Agent files not found in current directory."
     echo "Please run this script from the MyAITeam repository root."
     exit 1
@@ -72,6 +72,10 @@ declare -a agents=(
     "adk-python-engineer.md"
     "gcp-python-sdk-engineer.md"
     "gcp-nodejs-sdk-engineer.md"
+    "gcp-jenny.md"
+    "gcp-karen.md"
+    "gcp-task-validator.md"
+    "gcp-code-quality.md"
 )
 
 # Track installation status
@@ -134,11 +138,18 @@ echo ""
 if [ $installed_count -gt 0 ]; then
     echo "You can now use the following agents in Claude Code:"
     echo ""
+    echo "Development Agents:"
     echo "  • GCP Cloud Architect:      /agent gcp-cloud-architect"
     echo "  • GCP Terraform Engineer:   /agent gcp-terraform-engineer"
     echo "  • ADK Python Engineer:      /agent adk-python-engineer"
     echo "  • GCP Python SDK Engineer:  /agent gcp-python-sdk-engineer"
     echo "  • GCP Node.js SDK Engineer: /agent gcp-nodejs-sdk-engineer"
+    echo ""
+    echo "Quality Assurance Agents:"
+    echo "  • GCP Jenny (Verification): /agent gcp-jenny"
+    echo "  • GCP Karen (Reality Check): /agent gcp-karen"
+    echo "  • GCP Task Validator:       /agent gcp-task-validator"
+    echo "  • GCP Code Quality:         /agent gcp-code-quality"
     echo ""
     echo "For more information, see the README.md file."
 fi

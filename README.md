@@ -97,6 +97,72 @@ Expert in Google Cloud Platform Node.js Client Libraries, specializing in servic
 /agent gcp-nodejs-sdk-engineer
 ```
 
+## Quality Assurance Agents
+
+### 🔍 GCP Jenny (`gcp-jenny`)
+Senior GCP Engineering Auditor specializing in implementation verification. Examines actual GCP deployments against specifications to identify gaps, inconsistencies, and missing functionality.
+
+**Key Features:**
+- Independent verification using gcloud, kubectl, terraform, and other GCP tools
+- Resource deployment validation against architectural specifications
+- Security and compliance auditing with evidence-based reporting
+- Infrastructure drift detection and remediation guidance
+- Cross-service integration validation
+- Detailed gap analysis with specific remediation commands
+
+**Usage:**
+```bash
+/agent gcp-jenny
+```
+
+### 🔥 GCP Karen (`gcp-karen`)
+No-nonsense GCP Project Reality Manager who cuts through incomplete cloud implementations. Determines what actually works versus what has been claimed in GCP projects.
+
+**Key Features:**
+- Reality assessment of claimed GCP completions with extreme skepticism
+- Detection of "infrastructure theater" and configuration cargo cult practices
+- Validation that cloud services work under realistic production conditions
+- Pragmatic planning focused on making infrastructure actually functional
+- Load testing and failure scenario validation
+- Honest assessment of actual vs claimed functionality
+
+**Usage:**
+```bash
+/agent gcp-karen
+```
+
+### ✅ GCP Task Validator (`gcp-task-validator`)
+Senior GCP architect specializing in detecting incomplete, superficial, or fraudulent GCP task completions. Validates that claimed cloud implementations actually work end-to-end.
+
+**Key Features:**
+- Rigorous validation of claimed GCP task completions using actual testing
+- Detection of stub implementations, hardcoded values, and development shortcuts
+- End-to-end functional testing of cloud services and integrations
+- Production readiness assessment including load testing and error scenarios
+- Security validation to ensure proper authentication and authorization
+- APPROVED/REJECTED status with detailed remediation guidance
+
+**Usage:**
+```bash
+/agent gcp-task-validator
+```
+
+### 🎯 GCP Code Quality (`gcp-code-quality`)
+Pragmatic GCP code quality reviewer specializing in identifying over-engineered, overly complex cloud solutions. Ensures GCP implementations remain simple and aligned with actual project needs.
+
+**Key Features:**
+- Detection of GCP over-engineering and unnecessary complexity
+- Cost-complexity analysis for cloud resource optimization  
+- Identification of enterprise patterns in MVP projects
+- Simplification recommendations for Terraform, Kubernetes, and GCP services
+- Developer experience impact assessment
+- Concrete before/after examples for reducing cloud complexity
+
+**Usage:**
+```bash
+/agent gcp-code-quality
+```
+
 ## Installation
 
 ### Quick Install
@@ -138,7 +204,7 @@ These agents are designed to complement each other in complex GCP projects:
 
 ## Example Workflows
 
-### Full-Stack GCP Application
+### Full-Stack GCP Application with Quality Assurance
 ```bash
 # 1. Design the architecture
 /agent gcp-cloud-architect
@@ -148,20 +214,36 @@ These agents are designed to complement each other in complex GCP projects:
 /agent gcp-terraform-engineer
 "Create Terraform modules for the microservices platform using Fabric modules"
 
-# 3. Build backend services
+# 3. Verify infrastructure implementation
+/agent gcp-jenny
+"Verify that the deployed infrastructure matches the architectural specifications"
+
+# 4. Build backend services
 /agent gcp-python-sdk-engineer
 "Create Python microservices using Cloud Run, Pub/Sub, and BigQuery"
 
-# 4. Build frontend services
+# 5. Validate service implementations
+/agent gcp-task-validator
+"Validate that the microservices actually work end-to-end with real data"
+
+# 6. Build frontend services
 /agent gcp-nodejs-sdk-engineer
 "Create Node.js API gateway with authentication and real-time features"
 
-# 5. Add AI capabilities
+# 7. Reality check the complete system
+/agent gcp-karen
+"Assess the actual functionality vs claimed completion of the full platform"
+
+# 8. Review for over-engineering
+/agent gcp-code-quality
+"Review the entire implementation for unnecessary complexity and cost optimization"
+
+# 9. Add AI capabilities
 /agent adk-python-engineer
 "Build ADK agents for automated monitoring and customer support"
 ```
 
-### Data Analytics Pipeline
+### Data Analytics Pipeline with Quality Assurance
 ```bash
 # 1. Design data architecture
 /agent gcp-cloud-architect
@@ -171,13 +253,29 @@ These agents are designed to complement each other in complex GCP projects:
 /agent gcp-terraform-engineer
 "Create BigQuery datasets, Pub/Sub topics, and Dataflow jobs"
 
-# 3. Build data processing
+# 3. Verify infrastructure deployment
+/agent gcp-jenny
+"Verify BigQuery datasets, Pub/Sub topics are properly configured and accessible"
+
+# 4. Build data processing
 /agent gcp-python-sdk-engineer
 "Create Python data processing pipelines with streaming and batch operations"
 
-# 4. Build analytics dashboard
+# 5. Validate data pipeline functionality
+/agent gcp-task-validator
+"Test that data flows end-to-end from ingestion to BigQuery with real IoT data"
+
+# 6. Check for over-engineered data processing
+/agent gcp-code-quality
+"Review data pipeline complexity - ensure we're not over-engineering ETL processes"
+
+# 7. Build analytics dashboard
 /agent gcp-nodejs-sdk-engineer
 "Create real-time dashboard with WebSocket connections to BigQuery"
+
+# 8. Reality check the complete pipeline
+/agent gcp-karen
+"Validate that the data pipeline actually handles production data volumes and provides business value"
 ```
 
 ## Contributing
