@@ -41,6 +41,24 @@ Specialized GCP Terraform engineer with deep expertise in the Google and Google-
 /agent gcp-terraform-engineer
 ```
 
+### 🚨 GCP SRE Engineer (`gcp-sre-engineer`)
+Expert Google Cloud Platform Site Reliability Engineer specializing in SRE principles, practices, and methodologies using Google's SRE handbook guidance and validated gcloud commands.
+
+**Key Features:**
+- Complete implementation of Google's SRE handbook methodologies
+- Service Level Objectives (SLO) and Service Level Indicators (SLI) design
+- Error budget management and reliability engineering
+- Incident response and blameless postmortem processes
+- Monitoring, alerting, and observability with Cloud Operations Suite
+- Capacity planning and performance optimization
+- Automation and toil reduction strategies with validated gcloud commands
+- Production readiness reviews and disaster recovery planning
+
+**Usage:**
+```bash
+/agent gcp-sre-engineer
+```
+
 ### 🐍 ADK Python Engineer (`adk-python-engineer`)
 Expert in Google's Agent Development Kit (ADK) for Python, specializing in building production-ready AI agents with best practices, modular architecture, and enterprise-grade patterns.
 
