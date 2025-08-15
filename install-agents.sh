@@ -31,7 +31,7 @@ echo "========================================"
 echo ""
 
 # Check if running from the correct directory
-if [ ! -f "gcp-cloud-architect.md" ] || [ ! -f "gcp-terraform-engineer.md" ] || [ ! -f "adk-python-engineer.md" ] || [ ! -f "gcp-python-sdk-engineer.md" ] || [ ! -f "gcp-nodejs-sdk-engineer.md" ] || [ ! -f "gcp-jenny.md" ] || [ ! -f "gcp-karen.md" ] || [ ! -f "gcp-task-validator.md" ] || [ ! -f "gcp-code-quality.md" ] || [ ! -f "aws-cloud-architect.md" ] || [ ! -f "aws-terraform-engineer.md" ] || [ ! -f "aws-javascript-sdk-engineer.md" ] || [ ! -f "gcp-sre-engineer.md" ]; then
+if [ ! -f "gcp-cloud-architect.md" ] || [ ! -f "gcp-terraform-engineer.md" ] || [ ! -f "adk-python-engineer.md" ] || [ ! -f "gcp-python-sdk-engineer.md" ] || [ ! -f "gcp-nodejs-sdk-engineer.md" ] || [ ! -f "gcp-jenny.md" ] || [ ! -f "gcp-karen.md" ] || [ ! -f "gcp-task-validator.md" ] || [ ! -f "gcp-code-quality.md" ] || [ ! -f "aws-cloud-architect.md" ] || [ ! -f "aws-terraform-engineer.md" ] || [ ! -f "aws-javascript-sdk-engineer.md" ] || [ ! -f "gcp-sre-engineer.md" ] || [ ! -f "product-owner.md" ]; then
     print_error "Error: Agent files not found in current directory."
     echo "Please run this script from the MyAITeam repository root."
     exit 1
@@ -67,6 +67,7 @@ fi
 
 # List of agents to install
 declare -a agents=(
+    "product-owner.md"
     "gcp-cloud-architect.md"
     "gcp-terraform-engineer.md"
     "gcp-sre-engineer.md"
@@ -141,6 +142,9 @@ echo ""
 # Print usage instructions if any agents were installed
 if [ $installed_count -gt 0 ]; then
     echo "You can now use the following agents in Claude Code:"
+    echo ""
+    echo "Management Agents:"
+    echo "  • Product Owner:              /agent product-owner"
     echo ""
     echo "Development Agents:"
     echo "  • GCP Cloud Architect:        /agent gcp-cloud-architect"
