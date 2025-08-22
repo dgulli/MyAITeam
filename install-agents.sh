@@ -147,6 +147,7 @@ if [ $installed_count -gt 0 ]; then
     echo "  • Product Owner:              /agent product-owner"
     echo ""
     echo "Development Agents:"
+    echo "  • Prompt Engineer:            /agent prompt-engineer"
     echo "  • GCP Cloud Architect:        /agent gcp-cloud-architect"
     echo "  • GCP Terraform Engineer:     /agent gcp-terraform-engineer"
     echo "  • GCP SRE Engineer:           /agent gcp-sre-engineer"
